@@ -4,8 +4,5 @@ import react from '@vitejs/plugin-react'
 // vite.config.js
 export default defineConfig({
   base: "/Beautiful-Word-Map/",
-  build: {
-    outDir: "docs",
-  },
   plugins: [react()],
 })
