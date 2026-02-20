@@ -2,7 +2,7 @@
 
 > 전 세계 언어 속에 숨겨진 보물 같은 단어들을 찾아 나만의 지도를 그려가는 기록
 
-**🌐 [페이지 보기](https://ioabcoi.github.io/Beautiful-Word-Map/)**
+**🌐 [페이지 보기](https://ioabcoi.github.io/beautiful-word-map/)**
 
 ---
 
