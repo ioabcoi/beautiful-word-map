@@ -73,7 +73,14 @@ const serverApi = {
 const LS_W = "bwm_words_v1";
 const LS_T = "bwm_themes_v1";
 
-const lsGet  = (key, seed) => { try { return JSON.parse(localStorage.getItem(key)) || seed; } catch { return seed; } };
+const lsGet  = (key, seed) => {
+  try {
+    const val = JSON.parse(localStorage.getItem(key));
+    // null이거나 빈 배열이면 시드 데이터 반환
+    if (!val || (Array.isArray(val) && val.length === 0)) return seed;
+    return val;
+  } catch { return seed; }
+};
 const lsSet  = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 
 const localApi = {
